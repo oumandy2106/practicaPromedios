@@ -10,7 +10,7 @@ public class App {
         Estudiante estudiante4 = registrar(scanner, "Estudiante 4");
         Estudiante estudiante5 = registrar(scanner, "Estudiante 5");
 
-        System.out.println("\n=== RESULTADOS ===");
+        System.out.println("\n*** RESULTADOS ***");
         mostrarCalificacion(estudiante1);
         mostrarCalificacion(estudiante2);
         mostrarCalificacion(estudiante3);
@@ -20,7 +20,7 @@ public class App {
 
     public static Estudiante registrar(Scanner scanner, String titulo) {
         Estudiante e = new Estudiante();
-        System.out.println("=== " + titulo + " ===");
+        System.out.println("*** " + titulo + " ***");
         System.out.print("Nombre: ");
         e.setNombre(scanner.nextLine());
         System.out.print("Matrícula: ");
@@ -38,6 +38,6 @@ public class App {
         System.out.println("Matrícula: " + e.getMatricula());
         System.out.printf("Promedio: ", e.calcularPromedio());
         System.out.println("Aprobado: " + (e.aprobar() ? "Sí" : "No"));
-        System.out.println("--------------------------");
+        System.out.println("*******************");
     }
 }
